@@ -10,10 +10,10 @@ const App = props => {
   const onSubmitHandler = () => props.dispatch(__boilerplateAction(__boilerplate));
 
   return (
-    <div>
+    <>
       {console.log(props)}
       <h1>{props.__boilerplate}</h1>
-      <>
+      <div>
         <input
           value={__boilerplate}
           onChange={changeNameHandler}
@@ -25,8 +25,8 @@ const App = props => {
         >
           change store state
         </button>
-      </>
-    </div>
+      </div>
+    </>
   );
 };
 const mapStateToProps = ({ __boilerplate }) => {
