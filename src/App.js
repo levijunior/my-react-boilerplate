@@ -1,11 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function App() {
+import Connect from "./store/config/connect";
+import { __boilerplateAction } from "./store/__boilerplateDuck"; 
+
+const App = props => {
+
+  const [__boilerplate, setBoilerplate] = useState("");
+  const changeNameHandler = ({ target: { value } }) => setBoilerplate(value);
+  const onSubmitHandler = () => props.dispatch(__boilerplateAction(__boilerplate));
+
   return (
     <div>
-      <h1>My Boilerplate</h1>
+      {console.log(props)}
+      <h1>{props.__boilerplate}</h1>
+      <>
+        <input
+          value={__boilerplate}
+          onChange={changeNameHandler}
+          type="text"
+          placeholder="__boilerplate"
+        />
+        <button
+          onClick={onSubmitHandler}
+        >
+          change store state
+        </button>
+      </>
     </div>
   );
-}
+};
+const mapStateToProps = ({ __boilerplate }) => {
+  return {
+    __boilerplate
+  };
+};
 
-export default App;
+export default Connect(mapStateToProps)(App);
+
