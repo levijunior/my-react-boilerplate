@@ -6,6 +6,7 @@ export const FormContainer = styled.form`
   padding: 30px;
   position: relative;
 `
+
 export const InputEl = styled.input`
   display:block;
   padding: 10px 20px;

@@ -12,19 +12,17 @@ it('renders and compare to snapshot', () => {
 
 describe('Test example for __boilerplate',  () => {
   it('Update the __boilerplateDuck store', async () => {
-    const { getByTestId } = render( <BoilerplateApp /> )
+    const { getByTestId } = render( <BoilerplateApp /> ),
+    fieldNode = await waitForElement( () => getByTestId('inputEl') ),
+    btnNode = await waitForElement( () => getByTestId('buttonEl') ),
+    h2Node = await waitForElement( () => getByTestId('h2El') ),
+    testText = 'test text'
 
-    const fieldNode = await waitForElement( () => getByTestId('inputEl') )
-    const btnNode = await waitForElement( () => getByTestId('buttonEl') )
-    const h1Node = await waitForElement( () => getByTestId('h2El') )
-
-    const testText = 'test text'
     fireEvent.change(fieldNode, { target: {value: testText} })
     expect(fieldNode.value).toEqual(testText)
 
     fireEvent.click(btnNode)
     
-    expect(h1Node).toHaveTextContent(testText)
-
+    expect(h2Node).toHaveTextContent(testText)
   })
 })

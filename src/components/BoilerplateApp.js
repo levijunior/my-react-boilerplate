@@ -11,9 +11,9 @@ const App = props => {
 
   const inputEl = useRef(null);
 
-  const [__boilerplate, setBoilerplate] = useState("");
-  const changeNameHandler = ({ target: { value } }) => setBoilerplate(value);
-  const onSubmitHandler = e => {
+  const [__boilerplate, setBoilerplate] = useState(""),
+  changeNameHandler = ({ target: { value } }) => setBoilerplate(value),
+  onSubmitHandler = e => {
     e.preventDefault()
     props.dispatch(__boilerplateAction(__boilerplate))
   };
@@ -52,4 +52,3 @@ const mapStateToProps = ({ data }) => {
 };
 
 export default Connect(mapStateToProps)(App);
-
