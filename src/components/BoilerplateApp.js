@@ -7,14 +7,16 @@ import Connect from "../store/config/connect";
 import { __boilerplateAction } from "../store/__boilerplateDuck"; 
 
 
-
 const App = props => {
 
   const inputEl = useRef(null);
 
   const [__boilerplate, setBoilerplate] = useState("");
   const changeNameHandler = ({ target: { value } }) => setBoilerplate(value);
-  const onSubmitHandler = () => props.dispatch(__boilerplateAction(__boilerplate));
+  const onSubmitHandler = e => {
+    e.preventDefault()
+    props.dispatch(__boilerplateAction(__boilerplate))
+  };
 
   useEffect(() => {
     inputEl.current.focus();
@@ -23,7 +25,7 @@ const App = props => {
   return (
     <>
       <H1El>{props.__boilerplate}</H1El>
-      <FormContainer>
+      <FormContainer onSubmit={onSubmitHandler}>
         <InputEl
           value={__boilerplate}
           onChange={changeNameHandler}
@@ -33,7 +35,6 @@ const App = props => {
           data-testid="inputEl"
         />
         <ButtonEl
-          onClick={onSubmitHandler}
           data-testid="buttonEl"
         >
           change store state
@@ -43,6 +44,7 @@ const App = props => {
     </>
   );
 };
+
 const mapStateToProps = ({ data }) => {
   return {
     __boilerplate: data

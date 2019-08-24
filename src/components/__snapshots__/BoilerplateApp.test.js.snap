@@ -7,7 +7,7 @@ exports[`renders and compare to snapshot 1`] = `
   >
     __BOILERPLATE
   </h1>
-  <div
+  <form
     class="sc-bdVaJa bhVcIp"
   >
     <input
@@ -23,7 +23,7 @@ exports[`renders and compare to snapshot 1`] = `
     >
       change store state
     </button>
-  </div>
+  </form>
   <h2
     class="sc-ifAKCX bUaWFB"
     data-testid="h2El"
