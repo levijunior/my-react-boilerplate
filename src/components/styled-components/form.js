@@ -15,9 +15,9 @@ export const InputEl = styled.input`
   border-radius: 3px;
   font-size: 18px;
   margin: auto;
-  margin-bottom:20px;
   width: 500px;
   max-width: 100%;
+  margin-bottom:20px;
   box-sizing: border-box;
 `
 
@@ -31,5 +31,8 @@ export const ButtonEl = styled.button`
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 3px;
+  margin: auto;
+  width: 500px;
+  max-width: 100%;
   cursor: pointer;
 `
