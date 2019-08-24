@@ -6,6 +6,7 @@ export const H1El = styled.h1`
   margin: auto;
   width: 500px;
   max-width: 100%;
+  box-sizing: border-box;
 `
 
 export const H2El = styled.h2`
