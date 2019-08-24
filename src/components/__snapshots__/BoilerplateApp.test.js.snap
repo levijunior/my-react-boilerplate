@@ -3,7 +3,7 @@
 exports[`renders and compare to snapshot 1`] = `
 <DocumentFragment>
   <h1
-    class="sc-bxivhb bTwjlV"
+    class="sc-bxivhb bfVZUH"
   >
     __BOILERPLATE
   </h1>
@@ -11,14 +11,14 @@ exports[`renders and compare to snapshot 1`] = `
     class="sc-bdVaJa bhVcIp"
   >
     <input
-      class="sc-bwzfXH fGpkfM"
+      class="sc-bwzfXH cxkVJV"
       data-testid="inputEl"
       placeholder="__boilerplate"
       type="text"
       value=""
     />
     <button
-      class="sc-htpNat eQEgLM"
+      class="sc-htpNat jrGnXi"
       data-testid="buttonEl"
     >
       change store state
