@@ -1,7 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+import { FormContainer, InputEl, ButtonEl } from './styled-components/form'
+import { H1El, H2El } from './styled-components/text'
+
 import Connect from "../store/config/connect";
 import { __boilerplateAction } from "../store/__boilerplateDuck"; 
+
+
 
 const App = props => {
 
@@ -17,8 +22,9 @@ const App = props => {
 
   return (
     <>
-      <div>
-        <input
+      <H1El>{props.__boilerplate}</H1El>
+      <FormContainer>
+        <InputEl
           value={__boilerplate}
           onChange={changeNameHandler}
           type="text"
@@ -26,14 +32,14 @@ const App = props => {
           ref={inputEl} 
           data-testid="inputEl"
         />
-        <button
+        <ButtonEl
           onClick={onSubmitHandler}
           data-testid="buttonEl"
         >
           change store state
-        </button>
-      </div>
-      <h1 data-testid="h1El">{__boilerplate}</h1>
+        </ButtonEl>
+      </FormContainer>
+      <H2El data-testid="h2El">{__boilerplate}</H2El>
     </>
   );
 };

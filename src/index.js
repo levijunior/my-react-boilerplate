@@ -10,6 +10,9 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
   body {
+    padding: 0;
+    margin: 0;
+    background: #222;
     font-family: 'Raleway', sans-serif;
   }
 `

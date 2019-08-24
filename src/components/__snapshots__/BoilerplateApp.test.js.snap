@@ -2,21 +2,31 @@
 
 exports[`renders and compare to snapshot 1`] = `
 <DocumentFragment>
-  <div>
+  <h1
+    class="sc-bxivhb bTwjlV"
+  >
+    __BOILERPLATE
+  </h1>
+  <div
+    class="sc-bdVaJa bhVcIp"
+  >
     <input
+      class="sc-bwzfXH fGpkfM"
       data-testid="inputEl"
       placeholder="__boilerplate"
       type="text"
       value=""
     />
     <button
+      class="sc-htpNat eQEgLM"
       data-testid="buttonEl"
     >
       change store state
     </button>
   </div>
-  <h1
-    data-testid="h1El"
+  <h2
+    class="sc-ifAKCX bUaWFB"
+    data-testid="h2El"
   />
 </DocumentFragment>
 `;

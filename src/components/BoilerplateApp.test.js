@@ -16,7 +16,7 @@ describe('Test example for __boilerplate',  () => {
 
     const fieldNode = await waitForElement( () => getByTestId('inputEl') )
     const btnNode = await waitForElement( () => getByTestId('buttonEl') )
-    const h1Node = await waitForElement( () => getByTestId('h1El') )
+    const h1Node = await waitForElement( () => getByTestId('h2El') )
 
     const testText = 'test text'
     fireEvent.change(fieldNode, { target: {value: testText} })
