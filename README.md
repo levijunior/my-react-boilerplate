@@ -9,9 +9,10 @@ This boilerplate is being created using these cool stuff:
 - [Styled Components](https://www.styled-components.com/)
 - [Axios](https://github.com/axios/axios)
 - A 'Redux to Context' state control based on [Sergioamjr](https://github.com/Sergioamjr/redux-to-context-usereducer) great idea
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
 
 **Comming soon**
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+- [Storybook](https://storybook.js.org/)
 
 
 ## Available Scripts

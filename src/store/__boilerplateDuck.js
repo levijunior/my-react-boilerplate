@@ -1,6 +1,6 @@
 // SINGLE STORE INITIAL STATE
 export const __boilerplateStore = {
-  __boilerplate: 'Editar aqui'
+  data: '__BOILERPLATE',
 };
 
 // TYPES
@@ -11,7 +11,7 @@ const __boilerplateReducer = (state = __boilerplateStore, action) => {
   switch (action.type) {
     case __BOILERPLATE:
       return {
-        __boilerplate: action.__boilerplate || 'Editar aqui'
+        data: action.data || '__BOILERPLATE'
       };
 
     default:
@@ -20,10 +20,10 @@ const __boilerplateReducer = (state = __boilerplateStore, action) => {
 };
 
 //ACTIONS
-export const __boilerplateAction = __boilerplate => {
+export const __boilerplateAction = data => {
   return {
     type: __BOILERPLATE,
-    __boilerplate
+    data
   };
 };
 

@@ -5,8 +5,18 @@ import * as serviceWorker from './serviceWorker';
 
 import Provider from './store/config/provider'
 
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+  body {
+    font-family: 'Raleway', sans-serif;
+  }
+`
+
 ReactDOM.render(
   <Provider>
+    <GlobalStyle />
     <App />
   </Provider>,
   document.getElementById("root")

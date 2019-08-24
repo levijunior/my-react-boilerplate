@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BoilerplateApp from './components/App'
+import BoilerplateApp from './components/BoilerplateApp'
 
 const App = () => <BoilerplateApp />;
 

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders and compare to snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <input
+      data-testid="inputEl"
+      placeholder="__boilerplate"
+      type="text"
+      value=""
+    />
+    <button
+      data-testid="buttonEl"
+    >
+      change store state
+    </button>
+  </div>
+  <h1
+    data-testid="h1El"
+  />
+</DocumentFragment>
+`;
